@@ -289,11 +289,26 @@ footer .footer-date {
 }
 
 @media screen and (max-width:768px) {
-
+    .cert-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
 }
 
 @media screen and (max-width:480px) {
-
+    .first-section {
+        height: 400px;
+    }
+    .jobs-article {
+    width: 420px;
+    height: 200px;
+    }
+    .cert-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 }
 
 @media screen and (max-width:320px) {
@@ -307,4 +322,16 @@ footer .footer-date {
         height: auto;
         width: auto;
     }
+    .first-section {
+        height: 300px;
+    }
+    .jobs-article {
+    width: 300px;
+    height: 200px;
+    }
+    .cert-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+}
 }
