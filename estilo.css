@@ -1,0 +1,310 @@
+/* css */
+
+/* 
+    gris oscuro = #1d252c
+    gris claro = #1b2127
+    celeste = #026fff
+
+
+
+
+*/
+
+
+body {
+    margin: auto;
+    padding: 0%;
+    font-family: 'PT Sans', sans-serif;
+}
+
+h1 ,h2, h3, h4, h5, h6 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1 strong {
+color: #026fff;
+}
+
+
+.list-header {
+    z-index: 1;
+    display: flex;
+    position: fixed;
+    top: 0px;
+    height: 70px;
+    background-color: #1d252c;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.list-img {
+    margin: 0;
+    height: inherit;
+    padding: 0px 10px 0px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.list-img img:hover {
+    filter: invert(100%);
+    scale: (1.1);
+}
+
+
+.list-nav {
+    display: flex;
+    height: inherit;
+    padding-right: 40px;
+}
+
+.list-header ul {
+    display: flex;
+    height: inherit;
+    margin: 0%;
+    padding: 0%;
+  }
+
+  .list-header li {
+    list-style:none;
+    height: inherit;
+}
+
+.list-header a {
+    color: white;
+    text-decoration: none;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px 0px;
+}
+
+.list-container li:hover {
+    background-color: white;
+}
+
+ul li a:hover {
+    height: inherit;
+    color: black;
+    transform: scale(1.2);
+}
+
+
+/* fin de nav */
+
+.first-section {
+    margin-top: 60px;
+    height: 380px;
+    background-color: #1b2127;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.title-first-section {
+    line-height: 40px;
+    font-size: 30px;
+    font-weight: 400;
+    font-style: italic;
+    margin: 10px 20px;
+    padding: 5px 20px;
+    color: white;
+}
+
+
+.img-first-section {
+    margin: 10px 20px;
+}
+
+.porfolio-article {
+    border: 1px solid grey;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 20px;
+    margin: 10px 20px;
+    padding: 5px 20px;
+    display: block;
+}
+
+.jobs-article {
+    border: 1px solid black;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 20px;
+    margin: 30px 15px;
+    padding: 5px 0px;
+    display: inline-flex;
+    box-sizing: border-box;
+    width: 500px;
+    height: 180px;
+    text-align: left;
+    background-color: white;
+}
+
+.jobs {
+    text-align: center;
+}
+
+.jobs .jobs-header {
+    text-align: left;
+}
+
+.jobs-img {
+    display: inline-block;
+}
+
+.jobs-details {
+    display: inline-block;
+    width: 270px;
+}
+
+.jobs-link {
+    color: blue;
+}
+
+.link-tlc {
+    color: #00afef;
+    text-decoration: none;
+}
+
+.link-movi {
+    color: #5bc500;
+    text-decoration: none;
+}
+
+.link-orbt {
+    color: #023e92;
+    text-decoration: none;
+}
+
+
+
+h2 {
+    display: block;
+    font-weight: bold;
+    margin: auto;
+    padding: 20px 20px;
+}
+
+#portfolio {
+    background-color: mintcream;
+    margin: auto;
+    padding: 2px 15px;
+}
+
+.jobs {
+    background-color: #e5fff1;
+    margin: auto;
+    padding: 2px 15px;
+}
+
+.cert-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    padding: 30px;
+
+    flex-direction: column;
+}
+
+.cert-box {
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: white;
+    padding: 4px 15px 8px;
+/*     width: 500px; */
+    height: 370px;
+    margin: 10px 10px 20px;
+}
+
+.cert-curso img {
+    width: 450px;
+    height: 250px;
+}
+
+.cert-diploma {
+    margin: 5px;
+    pad: 1px;
+}
+
+.cert-sl, 
+.cert-ap, 
+.cert-pl {
+    display: flex;
+}
+
+
+
+.footer {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    margin: 0;
+    background-color: seagreen;
+
+    justify-content: space-evenly;
+}
+
+footer div  {
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+
+footer div p {
+    margin: 0%;
+}
+
+footer .footer-date {
+    height: inherit;
+}
+
+@media screen and (min-width:1025px) {
+    .first-section {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .img-first-section {
+        height: 180px;
+        width: 320px;
+    }
+    .cert-container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cert-ap,
+    .cert-sl,
+    .cert-pl {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .cert-box {
+        height: auto;
+        width: min-content;
+        transform: scale(0.8);
+    }
+}
+
+@media screen and (max-width:768px) {
+
+}
+
+@media screen and (max-width:480px) {
+
+}
+
+@media screen and (max-width:320px) {
+    .cert-ap,
+    .cert-sl,
+    .cert-pl {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .cert-box {
+        height: auto;
+        width: auto;
+    }
+}
