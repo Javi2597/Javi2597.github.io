@@ -130,7 +130,7 @@ ul li a:hover {
     padding: 5px 0px;
     display: inline-flex;
     box-sizing: border-box;
-    width: 500px;
+    width: 475px;
     height: 180px;
     text-align: left;
     background-color: white;
@@ -309,7 +309,7 @@ footer .footer-date {
         }
 }
 
-@media screen and (max-width:426px) {
+@media screen and (max-width:510px) {
     .first-section {
         height: 400px;
     }
@@ -336,7 +336,7 @@ footer .footer-date {
         }
 }
 
-@media screen and (max-width:376px) {
+@media screen and (max-width:420px) {
     .cert-ap,
     .cert-sl,
     .cert-pl {
