@@ -79,15 +79,7 @@ color: #026fff;
     padding: 0px 10px 0px;
 }
 
-.list-container li:hover {
-    background-color: white;
-}
 
-ul li a:hover {
-    height: inherit;
-    color: black;
-    transform: scale(1.2);
-}
 
 
 /* fin de nav */
@@ -196,9 +188,8 @@ h2 {
 .cert-container {
     display: flex;
     justify-content: space-around;
-    align-items: end;
+    align-items: center;
     padding: 30px;
-
     flex-direction: column;
 }
 
@@ -208,23 +199,19 @@ h2 {
     background-color: white;
     padding: 4px 15px 8px;
 /*     width: 500px; */
-    height: 370px;
+/*     height: 370px; */
     margin: 10px 10px 20px;
 }
 
-
+.cert-curso-img {
+    width: 450px;
+    height: 250px;
+    }
 
 .cert-diploma {
     margin: 5px;
     pad: 1px;
 }
-
-.cert-sl, 
-.cert-ap, 
-.cert-pl {
-    display: flex;
-}
-
 
 
 .footer {
@@ -233,9 +220,13 @@ h2 {
     height: 70px;
     margin: 0;
     background-color: seagreen;
-
     justify-content: space-evenly;
 }
+
+.cert-sl, .cert-ap, .cert-pl {
+    display: flex;
+}
+
 
 footer div  {
     height: inherit;
@@ -259,6 +250,31 @@ footer .footer-date {
         width: 450px;
         height: 250px;
         }
+        .list-container li:hover {
+            background-color: white;
+        }
+        
+        ul li a:hover {
+            height: inherit;
+            color: black;
+            transform: scale(1.2);
+        }
+        .cert-sl, .cert-ap, .cert-pl {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .cert-box {
+            border: 1px solid black;
+            border-radius: 20px;
+            background-color: white;
+            padding: 4px 15px 8px;
+            height: auto;
+            width: min-content;
+            margin: 10px 10px 20px;
+            
+}
+
 }
 
 @media screen and (max-width:1024px) {
@@ -267,22 +283,28 @@ footer .footer-date {
         width: 320px;
         margin: 10px 20px;
     }
-    .cert-container{
+    .cert-container {
         display: flex;
-        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
     }
-
-    .cert-ap,
-    .cert-sl,
-    .cert-pl {
-        display: flex;
-        flex-wrap: wrap;
-    }
+    
     .cert-box {
+        border: 1px solid black;
+        border-radius: 20px;
+        background-color: white;
+        padding: 4px 15px 8px;
         height: auto;
         width: min-content;
-        transform: scale(0.8);
-    }
+        margin: 10px 10px 20px;
+}
+.cert-ap,
+.cert-sl,
+.cert-pl {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
     .cert-curso-img {
         width: 450px;
         height: 250px;
@@ -290,23 +312,90 @@ footer .footer-date {
         .jobs-details {
             padding: 3px;
             margin: 2px;
+        }
+        .list-container li:hover {
+            background-color: white;
+        }
+        
+        ul li a:hover {
+            height: inherit;
+            color: black;
         }
 }
 
 @media screen and (max-width:768px) {
-    .cert-container{
+    .cert-container {
         display: flex;
-        justify-content: space-between;
         align-items: center;
+        justify-content: center;
+    }
+    .img-first-section {
+        height: 180px;
+        width: 320px;
+        margin: 10px 20px;
+        position: relative;
+        top: 5px;
+    }
+    .list-container li:hover {
+        background-color: white;
+    }
+    
+    ul li a:hover {
+        height: inherit;
+        color: black;
     }
     .cert-curso-img {
         width: 450px;
         height: 250px;
         }
+
         .jobs-details {
             padding: 3px;
             margin: 2px;
         }
+
+        /* PARA HACER MENU DESPLEGABLE CON MEDIA QUERIES */
+
+
+      /*   .list-header {
+            display: block;
+        }
+
+        .list-nav {
+            display: block;
+            height: 90px;
+            padding-right: 00px;
+            background-color: #1d252c;
+        }
+
+        .list-header ul {
+            display: block;
+            height: 20px;
+            background-color: #1d252c;
+
+        }
+        .list-header li {
+            display: block;
+            width: 100%;
+            border: 0.5px solid black;
+        } */
+
+        .cert-box {
+            height: auto;
+            min-width: auto;
+            transform: scale(0.8);
+        }
+
+        .cert-sl, 
+.cert-ap, 
+.cert-pl {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
 }
 
 @media screen and (max-width:510px) {
@@ -318,10 +407,10 @@ footer .footer-date {
         height: 210px;
         padding: 5px 10px 10px;
     }
-    .cert-container {        align-items: center;
-
+    .cert-container {
         display: flex;
-        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
     }
     .movi {
         height: 230px;
