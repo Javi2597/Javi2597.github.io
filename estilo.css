@@ -97,7 +97,7 @@ ul li a:hover {
     height: 380px;
     background-color: #1b2127;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -111,11 +111,6 @@ ul li a:hover {
     margin: 10px 20px;
     padding: 5px 20px;
     color: white;
-}
-
-
-.img-first-section {
-    margin: 10px 20px;
 }
 
 .porfolio-article {
@@ -153,11 +148,11 @@ ul li a:hover {
     display: inline-block;
 }
 
-.jobs-details {
+/* .jobs-details {
     display: inline-block;
     width: 270px;
 }
-
+ */
 .jobs-link {
     color: blue;
 }
@@ -217,10 +212,7 @@ h2 {
     margin: 10px 10px 20px;
 }
 
-.cert-curso img {
-    width: 450px;
-    height: 250px;
-}
+
 
 .cert-diploma {
     margin: 5px;
@@ -263,12 +255,17 @@ footer .footer-date {
     .first-section {
         width: 100%;
     }
+    .cert-curso-img {
+        width: 450px;
+        height: 250px;
+        }
 }
 
 @media screen and (max-width:1024px) {
     .img-first-section {
         height: 180px;
         width: 320px;
+        margin: 10px 20px;
     }
     .cert-container{
         display: flex;
@@ -286,6 +283,14 @@ footer .footer-date {
         width: min-content;
         transform: scale(0.8);
     }
+    .cert-curso-img {
+        width: 450px;
+        height: 250px;
+        }
+        .jobs-details {
+            padding: 3px;
+            margin: 2px;
+        }
 }
 
 @media screen and (max-width:768px) {
@@ -294,24 +299,44 @@ footer .footer-date {
         justify-content: space-between;
         align-items: center;
     }
-    
+    .cert-curso-img {
+        width: 450px;
+        height: 250px;
+        }
+        .jobs-details {
+            padding: 3px;
+            margin: 2px;
+        }
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:426px) {
     .first-section {
         height: 400px;
     }
     .jobs-article {
-    width: 420px;
-    height: 200px;
+        width: 375px;
+        height: 210px;
+        padding: 5px 10px 10px;
     }
-    .cert-container {
+    .cert-container {        align-items: center;
+
         display: flex;
-        align-items: center;
         justify-content: space-between;
+    }
+    .movi {
+        height: 230px;
+    }
+    .orbi {
+        height: 200px;
+    }
+
+    .cert-curso-img {
+        width: 450px;
+        height: 250px;
+        }
 }
 
-@media screen and (max-width:320px) {
+@media screen and (max-width:376px) {
     .cert-ap,
     .cert-sl,
     .cert-pl {
@@ -319,19 +344,54 @@ footer .footer-date {
         flex-wrap: wrap;
     }
     .cert-box {
-        height: auto;
-        width: auto;
+        height: inherit;
+        width: 300px;
     }
     .first-section {
-        height: 300px;
+        display: block;
+        height: 350px;
     }
-    .jobs-article {
-    width: 300px;
-    height: 200px;
+
+    .cert-curso-img {
+        width: 260px;
+        height: 180px;
     }
     .cert-container {
         display: flex;
         align-items: center;
         justify-content: space-between;
-}
+    }
+
+    .jobs {
+    display: grid;
+    justify-content: center;
+    }
+
+    .jobs-article {
+        width: 280px;
+        height: auto;
+        display: block;
+        padding: 5px;
+        text-align: center;
+        margin: 10px;
+    }
+    .jobs-clase {
+        padding: 4px ;
+        }
+    }
+    .first-section figure {
+        margin: 0px;
+    }
+    .first-section img {
+        margin: 0px;
+    }
+    .title-first-section {
+        line-height: 35px;
+        font-size: 22px;
+        font-weight: 400;
+        font-style: italic;
+        margin: 5px 10px;
+        padding: 5px 20px;
+        color: white;
+    }
 }
