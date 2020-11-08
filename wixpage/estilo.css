@@ -1,0 +1,109 @@
+/* CSS */
+
+.principal {
+    background-image: url(img/primer_fond.png);
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-color: #4db5e3;
+}
+
+.container_principal {
+text-align: center;
+position: relative;
+top: 110px;
+left: 5px;
+}
+
+.container_principal h1 {
+    font-size: 30px;
+    color: white;
+}
+
+.container_principal button {
+    border: white 1px solid;
+    border-radius: 20px;
+    transform: scale(1.2);
+
+
+}
+
+.container_principal button p {
+    display: inline;
+    font-size: 15px;
+    margin: 2px;
+    padding: 2px;
+}
+
+.principal_cont_de_bloc1 {
+    background-color: #fafafa;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.contenedor_de_bloque1{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+.bloque1 {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    justify-content:center;
+    text-align: center;
+}
+
+.columna1, .columna2 {
+margin-top: 5px;
+margin-bottom: 5px;
+padding-top: 5px;
+padding-bottom: 5px;
+text-align: justify;
+display:inline-block;
+}
+
+.columna1 {
+    font-weight:bold;
+    font-size: 36px;
+}
+
+.columna2 {
+    font-size: 20px;
+
+}
+.boton_columna2 {
+    color:  rgb(12, 102, 69);
+}
+
+.columna-izq {
+    background-color: rgb(12, 102, 69);
+}
+
+.imagen-derc {
+    background-image: url(img/tercerselectizq.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+
+.imagendos {
+    background-image: url(img/article3_imagen1.png);
+    width: 600px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position:center;
+    position: relative;
+    right: 50px;
+}
+.article_black {
+background-color: #1a1a1a;
+color: white;
+ }
