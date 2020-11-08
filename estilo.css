@@ -242,7 +242,7 @@ footer .footer-date {
     height: inherit;
 }
 
-@media screen and (min-width:1025px) {
+@media screen and (min-width:1050px) {
     .first-section {
         width: 100%;
     }
