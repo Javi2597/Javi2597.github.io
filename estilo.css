@@ -32,16 +32,7 @@ color: #026fff;
 }
 
 
-.list-header {
-    z-index: 1;
-    display: flex;
-    position: fixed;
-    top: 0px;
-    height: 70px;
-/*     background-color: #1d252c; */
-    width: 100%;
-    justify-content: space-between;
-}
+
 
 .list-img {
     margin: 0;
@@ -57,19 +48,6 @@ color: #026fff;
     scale: (1.1);
 }
 
-
-.list-nav {
-    display: flex;
-    height: inherit;
-    padding-right: 40px;
-}
-
-.list-header ul {
-    display: flex;
-    height: inherit;
-    margin: 0%;
-    padding: 0%;
-  }
 
   .list-header li {
     list-style:none;
@@ -261,6 +239,16 @@ footer .footer-date {
         height:auto;
     }
 
+    .list-header {
+        z-index: 1;
+        display: flex;
+        position: fixed;
+        top: 0px;
+        height: 70px;
+    /*     background-color: #1d252c; */
+        width: 100%;
+        justify-content: space-between;
+    }
 
 
     .cert-curso-img {
@@ -292,12 +280,50 @@ footer .footer-date {
             
 }
 
+.list-img {
+    position: absolute;
+}
+
+.list-header ul {
+    display: flex;
+    height: inherit;
+    margin: 0%;
+    padding: 0%;
+}
+.list-nav {
+    display: flex;
+    height: inherit;
+    padding-right: 40px;
+}
+
 }
 
 @media screen and (max-width:1049px) {
+    .list-img {
+        position: absolute;
+    }
+    
+    .list-header ul {
+    display: flex;
+    height: inherit;
+    margin: 0%;
+    padding: 0%;
+}
+
     .first-section {
         width: 100%;
         height:auto;
+    }
+
+    .list-header {
+        z-index: 1;
+        display: flex;
+        position: fixed;
+        top: 0px;
+        height: 70px;
+    /*     background-color: #1d252c; */
+        width: 100%;
+        justify-content: space-between;
     }
 
     .img-first-section {
@@ -342,6 +368,13 @@ footer .footer-date {
             height: inherit;
             color: black;
         }
+        .list-nav {
+            display: flex;
+            height: inherit;
+            padding-right: 40px;
+        }
+
+
 }
 
 @media screen and (max-width:768px) {
@@ -350,6 +383,35 @@ footer .footer-date {
         align-items: center;
         justify-content: center;
     }
+
+    .list-header {
+        z-index: 1;
+        position: fixed;
+        top: 0px;
+        height: auto;
+    /*     background-color: #1d252c; */
+        width: 100%;
+        padding-bottom: 5px;
+    }
+
+    .list-nav {
+        display: flex;
+        height: inherit;
+        justify-content: center;
+        padding-right: 0;
+        position: fixed;
+        width: 100%;
+        background-color: #06007f;
+        bottom: 100%;
+        transition:  .3s;
+    }
+
+    .list-nav.active {
+        top: 8%;
+        position: relative;
+    }
+
+
     .first-section {
         width: 100%;
         height:auto;
@@ -418,12 +480,90 @@ footer .footer-date {
     flex-wrap: wrap;
 }
 
+.list-img {
+    position: relative;
+    display: none;
+}
 
+@font-face {
+    font-family: 'icomoon';
+    src:  url('icomoon//fonts/icomoon.eot?d2vlif');
+    src:  url('icomoon/') format('embedded-opentype'),
+      url('icomoon//fonts/icomoon.ttf?d2vlif') format('truetype'),
+      url('icomoon//fonts/icomoon.woff?d2vlif') format('woff'),
+      url('icomoon//fonts/icomoon.svg?d2vlif#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-menu:before {
+    content: "\e900";
 
+  }
+
+  .icon-menu {
+    font-size: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-top: 10px;
+  }
+
+.list-img {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list-header {
+    height: auto;
+    display: block;
+}
+
+.list-header ul {
+    position: relative;
+    display: block;
+}
+
+.list-container {
+    display: block;
+}
+
+.list-container li  {
+    display: flex;
+    justify-content: center;
+}
+.list-img img {
+    position: absolute;
+    object-fit: cover;
+    bottom: 5px;
+}
 
 }
 
 @media screen and (max-width:510px) {
+    .list-header {
+        display: block;
+    }
+    
+    
     .first-section {
         width: 100%;
         height:auto;

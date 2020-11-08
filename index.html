@@ -18,23 +18,24 @@
     
     <!-- inicio de barra de navegacion -->
     <header class="list-header">
+        <span class="icon-menu" id="desplegable"></span>
         <figure class="list-img">
             <img style="object-fit:cover;" src="imagenes/codificacion.svg" alt="logo de google dev" width="50px"
                 height="40px">
         </figure>
-        <nav class="list-nav">
-            <ul class="list-container">
+        <nav class="list-nav" >
+            <ul class="list-container ">
                 <li class="list">
-                    <a class="list-link" href="#portfolio">Portafolio</a>
+                    <p><a class="list-link" href="#portfolio">Portafolio</a></p>
                 </li>
                 <li>
-                    <a class="list-link" href="#exp">Experiencia</a>
+                    <p><a class="list-link" href="#exp">Experiencia</a></p>
                 </li>
                 <li class="list">
-                    <a class="list-link" href="#cert">Certificaciones</a>
+                    <p><a class="list-link" href="#cert">Certificaciones</a></p>
                 </li>
                 <li class="list">
-                    <a class="list-link" href="#trabj">Trabajemos Juntos</a>
+                    <p><a class="list-link" href="#trabj">Trabajemos Juntos</a></p>
                 </li>
             </ul>
         </nav>
@@ -207,6 +208,25 @@
     </footer>
     <!-- fotter fin -->
     </main>
+
+    <script>
+        console.log("se ejecuta el siguiente script");
+       const menu = document.querySelector('.list-nav');
+        console.log(menu);
+       const burgerButton = document.querySelector('#desplegable');
+        console.log(burgerButton);
+
+       burgerButton.addEventListener('click', hideShow);
+        function hideShow () {
+            if (menu.classList.contains('active')) {
+                menu.classList.remove('active');
+            }
+            else {
+                menu.classList.add('active');
+            }
+        }
+
+    </script>
 
 </body>
 
