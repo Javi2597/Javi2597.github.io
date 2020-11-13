@@ -1,5 +1,8 @@
 /* CSS */
 
+
+
+
 html, body {
     margin: 0%;
     padding: 0%;
@@ -607,4 +610,28 @@ header li {
 
 .final-col-three-title, .final-rows{
     text-transform: capitalize;
+}
+
+.news-link {
+    width: -webkit-fill-available;
+}
+
+@media screen and (max-width: 768px) {
+    .col-one-main {
+        display: none;
+    }
+    .col-two-main {
+        width: auto;
+    }
+    div {
+        flex-wrap: wrap;
+    }
+    
+}
+@media screen and (max-width: 1440px) {
+
+    div {
+        flex-wrap: wrap;
+    }
+    
 }
