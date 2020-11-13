@@ -566,6 +566,7 @@ footer .footer-date {
 }
 
 @media screen and (max-width:510px) {
+
     .list-header {
         display: block;
     }
@@ -589,6 +590,11 @@ footer .footer-date {
         height: 210px;
         padding: 5px 10px 10px;
     }
+
+    .jobs-article.tele, .jobs-article.movi, .jobs-article.orbi {
+        width: auto;
+    }
+
     .cert-container {
         display: flex;
         align-items: center;
@@ -608,6 +614,11 @@ footer .footer-date {
 }
 
 @media screen and (max-width:420px) {
+
+    .jobs-article.tele, .jobs-article.movi, .jobs-article.orbi {
+        width: auto;
+    }
+
     .cert-ap,
     .cert-sl,
     .cert-pl {
