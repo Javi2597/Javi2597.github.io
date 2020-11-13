@@ -733,8 +733,31 @@ footer .footer-date {
 
 #trabj {
     background-color: #48C9B0;
+    height: 100px;
 }
 
 .footer {
     background-color: #1DB456;
+}
+
+.trabj-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    height: -webkit-fill-available;
+}
+
+.redes-container {
+    padding: 4px 20px;
+}
+
+.trabj-col-two {
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.redes-contact {
+    width: 50px;
 }
