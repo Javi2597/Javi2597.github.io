@@ -4,7 +4,27 @@
 
 
 
+.ul-bar {
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
+.li-bar {
+    text-decoration: none;
+    list-style: none;
+}
+
+.a-bar {
+    text-decoration: none;
+}
+
+.div-bar {
+    text-transform: capitalize;
+    color: blue;
+}
 
 
 
