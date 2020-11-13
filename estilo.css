@@ -233,6 +233,9 @@ footer .footer-date {
     margin: 1em;
 }
 
+
+
+
 @media screen and (min-width:1050px) {
     .first-section {
         width: 100%;
@@ -301,6 +304,19 @@ footer .footer-date {
 }
 
 }
+
+@media screen and (min-width:1625px) {
+    .cert-box {
+        width: max-content;
+    }
+    .cert-container h3 {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+
 
 @media screen and (max-width:1049px) {
     .list-img {
