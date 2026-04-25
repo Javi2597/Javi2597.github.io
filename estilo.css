@@ -244,7 +244,166 @@ nav ul li a:hover { color: var(--primary); }
 .company { color: var(--primary); font-weight: 600; margin-bottom: 0.5rem; }
 
 .timeline-content ul { padding-left: 1rem; color: var(--gray); font-size: 0.9rem; }
+#certifications {
+    padding: 40px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.cert-card {
+    background: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cert-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    border-color: #007bff;
+}
+
+.cert-card h3 {
+    margin: 0 0 8px 0;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #222;
+}
+
+.issuer {
+    font-size: 0.85rem;
+    color: #666;
+    margin: 0 0 15px 0;
+}
+
+/* Estilo del Desplegable */
+details {
+    background: #f8f9fa;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+summary {
+    list-style: none; /* Oculta flecha por defecto */
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #007bff;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+.plus-icon {
+    font-size: 1.1rem;
+    transition: transform 0.3s;
+}
+
+details[open] .plus-icon {
+    transform: rotate(45deg); /* Convierte el + en una x al abrir */
+    color: #dc3545;
+}
+
+.cert-id {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.75rem;
+    word-break: break-all;
+    color: #444;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px dashed #ccc;
+}
+#experience {
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.experience-container {
+    border-left: 2px solid #007bff;
+    padding-left: 30px;
+    margin-left: 10px;
+}
+
+.exp-card {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+/* El círculo de la línea de tiempo */
+.exp-card::before {
+    content: "";
+    position: absolute;
+    left: -41px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    background: #007bff;
+    border-radius: 50%;
+    border: 4px solid #fff;
+}
+
+.exp-info h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.company {
+    color: #007bff;
+    font-weight: bold;
+    margin: 5px 0;
+    font-size: 0.95rem;
+}
+
+.details {
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Estilo de los Badges/Etiquetas */
+.badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+/* Resaltado para las experiencias actuales o más técnicas */
+.exp-card:nth-child(-n+2) {
+    background: #fcfdff;
+    border-radius: 8px;
+    padding: 20px;
+    border: 1px solid #e0ebff;
+}
+
+.exp-card:nth-child(-n+2) .company {
+    color: #0056b3;
+}
+.badges span {
+    background: #f0f4f8;
+    color: #4a5568;
+    font-size: 0.75rem;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-weight: 600;
+    border: 1px solid #e2e8f0;
+}
 /* Habilidades */
 .skills-grid {
     display: flex;
