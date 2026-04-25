@@ -3,50 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Javi2597 | Portfolio</title>
+    <title>Javi2597 | Portfolio Profesional</title>
     <link rel="stylesheet" href="estilo.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">Javi<span>2597</span></div>
+            <div class="logo">Javi<span>Dev</span></div>
             <ul>
                 <li><a href="#proyectos">Proyectos</a></li>
                 <li><a href="#experiencia">Experiencia</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section class="hero">
-            <h1>Desarrollador de Software & <br><span>Automatización</span></h1>
-            <p>Especializado en Python, algoritmos de trading y desarrollo web moderno.</p>
-            <a href="https://github.com/Javi2597" class="btn-primary">Ver GitHub</a>
+            <h1>Desarrollador & Especialista en <br><span>Automatización</span></h1>
+            <p>Creando soluciones inteligentes con Python, Machine Learning y Desarrollo Web Moderno.</p>
+            <div class="hero-btns">
+                <a href="https://github.com/Javi2597" class="btn-primary">Ver GitHub</a>
+                <a href="#contacto" class="btn-secondary">Contactar</a>
+            </div>
+        </section>
+<section id="sobre-mi" class="container">
+    <div class="about-grid">
+        <div class="about-text">
+            <h2 class="section-title" style="text-align: left;">Más que un <span>Programador</span></h2>
+            <p>
+                Mi camino en el mundo digital comenzó con la creación de <strong>AethelAgency</strong>, donde aprendí que la tecnología es la herramienta más poderosa para potenciar marcas y optimizar negocios. Esta experiencia me dio una visión única: no solo construyo software, sino soluciones que generan impacto real.
+            </p>
+            <p>
+                Hoy, fusiono mis habilidades en <strong>Python y Machine Learning</strong> con mi experiencia en gestión de proyectos para desarrollar sistemas de automatización, bots de trading y soluciones de visión computarizada. Mi objetivo es transformar procesos complejos en flujos de trabajo eficientes y escalables.
+            </p>
+        </div>
+        <div class="about-stats">
+            <div class="stat-card">
+                <h4>+2 Años</h4>
+                <p>Gestión Digital</p>
+            </div>
+            <div class="stat-card">
+                <h4>Python</h4>
+                <p>Especialidad Técnica</p>
+            </div>
+        </div>
+    </div>
+</section>
+        <section id="proyectos" class="container">
+            <h2 class="section-title">Proyectos <span>Destacados</span></h2>
+            <div class="grid-projects">
+                <div class="card">
+                    <div class="card-icon">📈</div>
+                    <h3>Trading Bot Pro</h3>
+                    <p>Algoritmo de trading en tiempo real con integración de RSI y gestión avanzada de riesgos.</p>
+                    <span class="tag">Python</span>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🤖</div>
+                    <h3>Gaming AI</h3>
+                    <p>Sistema de navegación por visión computarizada diseñado para entornos multijugador.</p>
+                    <span class="tag">Machine Learning</span>
+                </div>
+                <div class="card">
+                    <div class="card-icon">💼</div>
+                    <h3>CRM Custom</h3>
+                    <p>Plataforma de gestión para agencias de contenido con métricas en tiempo real y Make.com.</p>
+                    <span class="tag">Automation</span>
+                </div>
+            </div>
         </section>
 
-        <section id="proyectos" class="grid-container">
-            <div class="card">
-                <h3>Trading Bot</h3>
-                <p>Algoritmo en tiempo real con estrategia RSI y gestión de riesgos.</p>
-                <span class="tag">Python</span>
+        <section id="experiencia" class="container bg-alt">
+            <h2 class="section-title">Experiencia <span>Laboral</span></h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2024 - Presente</div>
+                    <div class="timeline-content">
+                        <h3>Desarrollador de Soluciones de Automatización</h3>
+                        <p class="company">Freelance</p>
+                        <ul>
+                            <li>Desarrollo de bots especializados en análisis técnico financiero.</li>
+                            <li>Creación de scripts de automatización para flujos de trabajo empresariales.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2023 - 2024</div>
+                    <div class="timeline-content">
+                        <h3>Fundador & Director Digital</h3>
+                        <p class="company">AethelAgency</p>
+                        <ul>
+                            <li>Gestión integral de marca y estrategia digital para creadores.</li>
+                            <li>Diseño de infraestructuras de datos para seguimiento de métricas.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="card">
-                <h3>Agencia Digital</h3>
-                <p>Diseño de marca y gestión de contenido para creadores.</p>
-                <span class="tag">Branding</span>
-            </div>
-            <div class="card">
-                <h3>Gaming AI</h3>
-                <p>Programa de navegación por visión computarizada para multijugador.</p>
-                <span class="tag">Machine Learning</span>
+        </section>
+
+        <section id="habilidades" class="container">
+            <h2 class="section-title">Mis <span>Skills</span></h2>
+            <div class="skills-grid">
+                <div class="skill-tag">Python</div>
+                <div class="skill-tag">JavaScript</div>
+                <div class="skill-tag">HTML5 / CSS3</div>
+                <div class="skill-tag">Machine Learning</div>
+                <div class="skill-tag">Automation (Make/Zapier)</div>
+                <div class="skill-tag">Branding & Design</div>
+                <div class="skill-tag">Git / GitHub</div>
+                <div class="skill-tag">SQL & CRM</div>
             </div>
         </section>
     </main>
-
+<section id="contacto" class="container bg-dark-section">
+    <div class="contacto-content">
+        <h2 class="section-title">¿Tienes un <span>Proyecto?</span></h2>
+        <p>Actualmente estoy disponible para nuevos desafíos en desarrollo Python, IA y automatización web.</p>
+        <div class="contacto-links">
+            <a href="https://www.linkedin.com/in/javi-bellido-dev/" target="_blank" class="btn-linkedin">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="20"> 
+                Conectar en LinkedIn
+            </a>
+            <a href="mailto:tu-correo@ejemplo.com" class="btn-secondary">Enviar Email</a>
+        </div>
+    </div>
+</section>
     <footer>
-        <p>&copy; 2026 Javi2597 - Desarrollado con pasión.</p>
+        <p>&copy; 2026 Javi2597. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
