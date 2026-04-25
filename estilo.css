@@ -6,17 +6,12 @@
     --bg-alt: #f8fafc;
     --gray: #64748b;
     --accent: #38bdf8;
+    --border: #e2e8f0;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
-html {
-    scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
     font-family: 'Inter', sans-serif;
@@ -25,13 +20,9 @@ body {
     line-height: 1.6;
 }
 
-.container {
-    padding: 80px 10%;
-}
-
-.bg-alt {
-    background-color: var(--bg-alt);
-}
+/* Layout */
+.container { padding: 80px 10%; }
+.bg-alt { background-color: var(--bg-alt); }
 
 /* Navegación */
 nav {
@@ -46,12 +37,7 @@ nav {
     z-index: 100;
 }
 
-.logo {
-    font-weight: 700;
-    font-size: 1.5rem;
-    letter-spacing: -1px;
-}
-
+.logo { font-weight: 700; font-size: 1.5rem; letter-spacing: -1px; }
 .logo span { color: var(--primary); }
 
 nav ul { display: flex; list-style: none; }
@@ -91,7 +77,7 @@ nav ul li a:hover { color: var(--primary); }
     margin: 0 auto 2.5rem;
 }
 
-.btn-primary, .btn-secondary {
+.btn-primary, .btn-secondary, .btn-linkedin {
     display: inline-block;
     padding: 0.9rem 2.2rem;
     border-radius: 50px;
@@ -100,381 +86,164 @@ nav ul li a:hover { color: var(--primary); }
     transition: all 0.3s;
 }
 
-.btn-primary {
-    background-color: var(--dark);
-    color: white;
-    margin-right: 1rem;
-}
-
-.btn-secondary {
-    border: 2px solid var(--dark);
-    color: var(--dark);
-}
-
+.btn-primary { background-color: var(--dark); color: white; margin-right: 1rem; }
+.btn-secondary { border: 2px solid var(--dark); color: var(--dark); }
 .btn-primary:hover { transform: translateY(-3px); background-color: var(--primary); }
 
-.about-grid {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    gap: 4rem;
-    align-items: center;
-}
-
-.about-text p {
-    font-size: 1.1rem;
-    color: var(--gray);
-    margin-bottom: 1.5rem;
-}
-
-.about-stats {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
-}
-
+/* About Section */
+.about-grid { display: grid; grid-template-columns: 1.5fr 1fr; gap: 4rem; align-items: center; }
 .stat-card {
     background: var(--bg-alt);
     padding: 2rem;
     border-radius: 20px;
     text-align: center;
-    border: 1px solid #e2e8f0;
+    border: 1px solid var(--border);
 }
+.stat-card h4 { font-size: 1.8rem; color: var(--primary); margin-bottom: 0.5rem; }
 
-.stat-card h4 {
-    font-size: 1.8rem;
-    color: var(--primary);
-    margin-bottom: 0.5rem;
-}
-
-.stat-card p {
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: var(--dark);
-}
-
-/* Ajuste para móviles */
-@media (max-width: 768px) {
-    .about-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-}
-
-/* Secciones Comunes */
-.section-title {
-    text-align: center;
-    font-size: 2.2rem;
-    margin-bottom: 3rem;
-    font-weight: 700;
-}
-
+/* Section Titles */
+.section-title { text-align: center; font-size: 2.2rem; margin-bottom: 3rem; font-weight: 700; }
 .section-title span { color: var(--primary); }
 
-/* Grid Proyectos */
-.grid-projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-}
-
+/* Proyectos */
+.grid-projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
 .card {
     background: white;
     padding: 2.5rem;
     border-radius: 20px;
-    border: 1px solid #e2e8f0;
+    border: 1px solid var(--border);
     transition: all 0.3s ease;
 }
+.card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.05); border-color: var(--primary-light); }
 
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.05);
-    border-color: var(--primary-light);
-}
-
-.card-icon { font-size: 2.5rem; margin-bottom: 1rem; }
-
-.tag {
-    display: inline-block;
-    margin-top: 1.5rem;
-    padding: 0.3rem 1rem;
-    background: var(--primary-light);
-    color: var(--primary);
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: 600;
-}
-
-/* Timeline Experiencia */
-.timeline {
-    position: relative;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.timeline::after {
-    content: '';
-    position: absolute;
-    width: 2px;
-    background: #e2e8f0;
-    top: 0; bottom: 0; left: 20px;
-}
-
-.timeline-item {
-    position: relative;
-    padding: 20px 0 20px 50px;
-}
-
-.timeline-dot {
-    position: absolute;
-    left: 13px; top: 25px;
-    width: 14px; height: 14px;
-    background: var(--primary);
-    border-radius: 50%;
-    border: 3px solid white;
-    z-index: 2;
-}
-
-.timeline-content {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
-}
-
-.company { color: var(--primary); font-weight: 600; margin-bottom: 0.5rem; }
-
-.timeline-content ul { padding-left: 1rem; color: var(--gray); font-size: 0.9rem; }
-#certifications {
-    padding: 40px 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.cert-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 20px;
-}
-
-.cert-card {
-    background: #ffffff;
-    border: 1px solid #eaeaea;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    transition: all 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.cert-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
-    border-color: #007bff;
-}
-
-.cert-card h3 {
-    margin: 0 0 8px 0;
-    font-size: 1rem;
-    line-height: 1.4;
-    color: #222;
-}
-
-.issuer {
-    font-size: 0.85rem;
-    color: #666;
-    margin: 0 0 15px 0;
-}
-
-/* Estilo del Desplegable */
-details {
-    background: #f8f9fa;
-    padding: 8px 12px;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-summary {
-    list-style: none; /* Oculta flecha por defecto */
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: #007bff;
-    outline: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-summary::-webkit-details-marker {
-    display: none;
-}
-
-.plus-icon {
-    font-size: 1.1rem;
-    transition: transform 0.3s;
-}
-
-details[open] .plus-icon {
-    transform: rotate(45deg); /* Convierte el + en una x al abrir */
-    color: #dc3545;
-}
-
-.cert-id {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 0.75rem;
-    word-break: break-all;
-    color: #444;
-    margin-top: 10px;
-    padding-top: 10px;
-    border-top: 1px dashed #ccc;
-}
-#experience {
-    padding: 50px 20px;
-    max-width: 900px;
-    margin: auto;
-}
-
+/* Experiencia */
 .experience-container {
-    border-left: 2px solid #007bff;
+    border-left: 2px solid var(--primary);
     padding-left: 30px;
-    margin-left: 10px;
+    margin: 0 auto;
+    max-width: 800px;
 }
 
 .exp-card {
     position: relative;
     margin-bottom: 40px;
+    padding: 20px;
+    transition: all 0.3s;
 }
 
-/* El círculo de la línea de tiempo */
 .exp-card::before {
     content: "";
     position: absolute;
-    left: -41px;
-    top: 5px;
-    width: 20px;
-    height: 20px;
-    background: #007bff;
+    left: -41px; top: 25px;
+    width: 18px; height: 18px;
+    background: var(--primary);
     border-radius: 50%;
-    border: 4px solid #fff;
+    border: 4px solid var(--light);
 }
 
-.exp-info h3 {
-    margin: 0;
-    font-size: 1.25rem;
-    color: #333;
+.exp-card.highlight {
+    background: linear-gradient(to right, var(--light), var(--bg-alt));
+    border-radius: 12px;
+    border: 1px solid var(--primary-light);
+    transform: scale(1.02);
 }
 
-.company {
-    color: #007bff;
-    font-weight: bold;
-    margin: 5px 0;
-    font-size: 0.95rem;
-}
+.company { color: var(--primary); font-weight: 700; }
 
-.details {
-    color: #555;
-    font-size: 0.9rem;
-    line-height: 1.6;
-    margin-bottom: 15px;
-}
-
-/* Estilo de los Badges/Etiquetas */
-.badges {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-}
-/* Resaltado para las experiencias actuales o más técnicas */
-.exp-card:nth-child(-n+2) {
-    background: #fcfdff;
-    border-radius: 8px;
-    padding: 20px;
-    border: 1px solid #e0ebff;
-}
-
-.exp-card:nth-child(-n+2) .company {
-    color: #0056b3;
-}
+.badges { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
 .badges span {
-    background: #f0f4f8;
-    color: #4a5568;
+    background: var(--primary-light);
+    color: var(--primary);
     font-size: 0.75rem;
     padding: 4px 12px;
     border-radius: 15px;
     font-weight: 600;
-    border: 1px solid #e2e8f0;
-}
-/* Habilidades */
-.skills-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
 }
 
+/* Certificaciones Carrusel */
+.carousel-wrapper { position: relative; display: flex; align-items: center; gap: 10px; }
+.cert-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 20px;
+    padding: 20px 5px;
+    scrollbar-width: none;
+}
+.cert-carousel::-webkit-scrollbar { display: none; }
+
+.cert-card {
+    min-width: 280px;
+    background: var(--light);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+    flex-shrink: 0;
+}
+
+.carousel-btn {
+    background: var(--dark);
+    color: white;
+    border: none;
+    width: 45px; height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.carousel-btn:hover { background: var(--primary); }
+
+/* Skills */
+.skills-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; }
 .skill-tag {
     padding: 0.8rem 1.5rem;
     background: white;
-    border: 1px solid #e2e8f0;
+    border: 1px solid var(--border);
     border-radius: 12px;
-    font-weight: 500;
     transition: all 0.3s;
 }
+.skill-tag:hover { background: var(--dark); color: white; transform: translateY(-5px); }
 
-.skill-tag:hover {
-    background: var(--dark);
-    color: white;
-    transform: scale(1.05);
+/* Footer & Contacto */
+.bg-dark-section { background-color: var(--dark); color: white; text-align: center; }
+.btn-linkedin { background-color: #0077b5; color: white; display: flex; align-items: center; gap: 8px; }
+
+@media (max-width: 768px) {
+    nav ul { display: none; }
+    .about-grid { grid-template-columns: 1fr; }
+    .container { padding: 60px 5%; }
+    .carousel-btn { display: none; }
 }
 
-.bg-dark-section {
-    background-color: #0f172a;
-    color: white;
-    text-align: center;
-}
-
-.bg-dark-section .section-title { color: white; }
-
-.contacto-content p {
-    margin-bottom: 2rem;
-    color: #94a3b8;
-}
-
-.contacto-links {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-}
-
-.btn-linkedin {
-    display: flex;
+/* Unificamos estilos de botones para consistencia */
+.btn-primary, .btn-secondary, .btn-linkedin {
+    display: inline-flex; /* Cambiado a inline-flex para centrar icono y texto */
     align-items: center;
+    justify-content: center;
     gap: 10px;
-    padding: 0.9rem 2.2rem;
-    background-color: #0077b5; /* Azul oficial LinkedIn */
-    color: white;
-    text-decoration: none;
+    padding: 0.8rem 1.8rem; /* Tamaño estándar balanceado */
     border-radius: 50px;
+    text-decoration: none;
     font-weight: 600;
-    transition: transform 0.3s;
+    font-size: 0.95rem; /* Tamaño de fuente estándar */
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+}
+
+/* Color específico de LinkedIn */
+.btn-linkedin {
+    background-color: #0077b5;
+    color: white;
 }
 
 .btn-linkedin:hover {
-    transform: translateY(-3px);
     background-color: #005a8a;
+    transform: translateY(-3px);
 }
 
-footer {
-    padding: 4rem 10%;
-    text-align: center;
-    color: var(--gray);
-    border-top: 1px solid #e2e8f0;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    nav ul { display: none; }
-    .hero h1 { font-size: 2.5rem; }
-    .container { padding: 50px 5%; }
+/* Ajuste del icono para que no deforme el botón */
+.btn-linkedin img {
+    width: 18px; /* Tamaño estándar de icono */
+    height: 18px;
+    filter: brightness(0) invert(1); /* Opcional: hace que el logo sea blanco */
 }
